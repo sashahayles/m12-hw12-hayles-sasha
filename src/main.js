@@ -6,17 +6,17 @@ class Desserts  {
 }
 class IceCream extends Desserts {
   constructor(type, calories, flavor, scoops) {
-    super(size, year);
-    this.make = make;
-    this.model =model;
+    super(flavor, scoops);
+    this.flavor = flavor;
+    this.scoops = scoops;
   }
-  ecoFriendly () {
-    if (this.size === 'Big') {
-      console.log ('Buy a Prius!');
+  includeSpoon () {
+    if (this.type === 'Ice Cream') {
+      console.log ('Here is your spoon!');
     }
   }
 }
 
-const chevySilverado = new Truck ('Big', 2008, 'Chevrolet', 'Silverado');
-console.log (chevySilverado.year);
-chevySilverado.ecoFriendly();
+const vanillaIceCream= new IceCream ('Ice Cream', 340, 'Vanilla', 3);
+console.log (vanillaIceCream);
+vanillaIceCream.includeSpoon();
